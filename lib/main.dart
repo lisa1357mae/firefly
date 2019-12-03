@@ -24,7 +24,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return new FlareActor("animations/boring_star.flr",
+    return new FlareActor("animations/boring_triangle.flr",
         alignment: Alignment.center,
         fit: BoxFit.contain,
         animation: "rotate_scale_color");
