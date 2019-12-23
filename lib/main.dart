@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 
-void main()=> runApp( 
+void main()=> runApp(
   MaterialApp(
-    home: MyApp(),
+    home: MyApp(), //root widget of application
     title: "Navigation Drawer",
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
@@ -15,7 +15,6 @@ class WidgetName extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-
     );
   }
 }
@@ -27,23 +26,31 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+
         title: Text("Home"),
+         centerTitle: true,
          backgroundColor: Colors.pink,
       ),
+
       body: Center(
-        child: Text("FireFly", style: TextStyle(
+        child: Text(
+          "FireFly",
+          style: TextStyle(
           fontSize: 34.0,
+          fontWeight: FontWeight.bold,
+          letterSpacing: 2.0,
           color: Colors.orange[200],
-        ),)
+            fontFamily: 'ShadowsIntoLight',
+        ),
+      )
       ),
       floatingActionButton: FloatingActionButton(
-
         onPressed: (){},
-
-       
-          child: Icon(Icons.add,),
+          child: Text('click'),
   backgroundColor: Colors.pink,
       ),
+
+
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.all(0),
@@ -55,7 +62,7 @@ class MyApp extends StatelessWidget {
                 color: const Color(0xFFFFF9C4),
               ),
               currentAccountPicture: CircleAvatar(
-                backgroundColor: Colors.pink,
+                backgroundColor: Colors.green,
                 child: Text(
                   "L",
                   style: TextStyle(fontSize: 40.0, color: Colors.black),
