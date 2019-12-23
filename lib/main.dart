@@ -11,11 +11,12 @@ void main()=> runApp(
 ),
   )
 );
-class WidgetName extends StatelessWidget {
+
+//our own widget class
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-    );
+    return Container();
   }
 }
 
@@ -29,25 +30,37 @@ class MyApp extends StatelessWidget {
 
         title: Text("Home"),
          centerTitle: true,
-         backgroundColor: Colors.pink,
+         backgroundColor: Colors.grey,
       ),
 
+
       body: Center(
-        child: Text(
-          "FireFly",
-          style: TextStyle(
-          fontSize: 34.0,
-          fontWeight: FontWeight.bold,
-          letterSpacing: 2.0,
-          color: Colors.orange[200],
-            fontFamily: 'ShadowsIntoLight',
+        child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/firefly-62vi3TG5EDg-unsplash.jpg'),
+                fit: BoxFit.fill,
+              ),
+            ),
+            child:
+            Text(
+              "FireFly",
+              style: TextStyle(
+                fontSize: 124.0,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 2.0,
+                color: Colors.grey[200],
+                fontFamily: 'ShadowsIntoLight',
+              ),
+            )
         ),
-      )
       ),
+
+
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
           child: Text('click'),
-  backgroundColor: Colors.pink,
+  backgroundColor: Colors.grey,
       ),
 
 
@@ -62,7 +75,7 @@ class MyApp extends StatelessWidget {
                 color: const Color(0xFFFFF9C4),
               ),
               currentAccountPicture: CircleAvatar(
-                backgroundColor: Colors.green,
+                backgroundColor: Colors.grey,
                 child: Text(
                   "L",
                   style: TextStyle(fontSize: 40.0, color: Colors.black),
