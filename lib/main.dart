@@ -59,8 +59,8 @@ class MyApp extends StatelessWidget {
 
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
-          child: Text('click'),
-  backgroundColor: Colors.grey,
+        child: Text('click'),
+        backgroundColor: Colors.grey,
       ),
 
 
@@ -72,7 +72,7 @@ class MyApp extends StatelessWidget {
               accountName: Text(""),
               accountEmail: Text(""),
               decoration: BoxDecoration(
-                color: const Color(0xFFFFF9C4),
+                color: const Color(0xFFFFEBEE),
               ),
               currentAccountPicture: CircleAvatar(
                 backgroundColor: Colors.grey,
