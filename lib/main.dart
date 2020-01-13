@@ -9,7 +9,7 @@ void main()=> runApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
     primarySwatch: Colors.blue,
-),
+    ),
   )
 );
 
@@ -18,7 +18,6 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return   Container();
-
   }
 }
 
@@ -35,17 +34,13 @@ class MyApp extends StatelessWidget {
          backgroundColor: Colors.grey,
       ),
 
-
-
-
-
-body: Container(
-    height: 800,
-    width: 800,
-    child: FlareActor("animations/firefly_animation2.flr",
+      body: Container(
+        height: 800,
+        width: 800,
+      child: FlareActor("animations/firefly_animation2.flr",
         alignment: Alignment.center,
         animation: "rotate_scale_color")
-),
+    ),
 
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
