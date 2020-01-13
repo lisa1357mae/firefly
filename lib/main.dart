@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import "package:flare_flutter/flare_actor.dart";
 
 
 void main()=> runApp(
@@ -16,9 +17,7 @@ void main()=> runApp(
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-
-    );
+    return   Container();
 
   }
 }
@@ -40,8 +39,13 @@ class MyApp extends StatelessWidget {
 
 
 
-
-
+body: Container(
+    height: 200,
+    width: 200,
+    child: FlareActor("animations/dragon.flr",
+        alignment: Alignment.center,
+        animation: "rotate_scale_color")
+),
 
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
