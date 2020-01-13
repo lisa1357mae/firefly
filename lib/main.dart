@@ -16,7 +16,10 @@ void main()=> runApp(
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+
+    );
+
   }
 }
 
@@ -34,27 +37,10 @@ class MyApp extends StatelessWidget {
       ),
 
 
-      body: Center(
-        child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/firefly-62vi3TG5EDg-unsplash.jpg'),
-                fit: BoxFit.fill,
-              ),
-            ),
-            child:
-            Text(
-              "FireFly",
-              style: TextStyle(
-                fontSize: 124.0,
-                fontWeight: FontWeight.bold,
-                letterSpacing: 2.0,
-                color: Colors.grey[200],
-                fontFamily: 'ShadowsIntoLight',
-              ),
-            )
-        ),
-      ),
+
+
+
+
 
 
       floatingActionButton: FloatingActionButton(
