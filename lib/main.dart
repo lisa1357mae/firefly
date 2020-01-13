@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
 
-        title: Text("Home"),
+        title: Text(""),
          centerTitle: true,
          backgroundColor: Colors.grey,
       ),
@@ -40,9 +40,9 @@ class MyApp extends StatelessWidget {
 
 
 body: Container(
-    height: 200,
-    width: 200,
-    child: FlareActor("animations/dragon.flr",
+    height: 800,
+    width: 800,
+    child: FlareActor("animations/firefly_animation2.flr",
         alignment: Alignment.center,
         animation: "rotate_scale_color")
 ),
@@ -62,7 +62,7 @@ body: Container(
               accountName: Text(""),
               accountEmail: Text(""),
               decoration: BoxDecoration(
-                color: const Color(0xFFFFEBEE),
+                color: const Color(0xFF006064),
               ),
               currentAccountPicture: CircleAvatar(
                 backgroundColor: Colors.grey,
