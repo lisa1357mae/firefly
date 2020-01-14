@@ -5,6 +5,7 @@ import "package:flare_flutter/flare_actor.dart";
 void main()=> runApp(
   MaterialApp(
     home: MyApp(), //root widget of application
+    routes: {},
     title: "Navigation Drawer",
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
@@ -29,18 +30,22 @@ class MyApp extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
 
-        title: Text(""),
+        title: Text("Firefly"),
          centerTitle: true,
          backgroundColor: Colors.grey,
       ),
 
       body: Container(
+
         height: 800,
         width: 800,
-      child: FlareActor("animations/firefly_animation2.flr",
+    child: FlareActor("animations/firefly_animation2.flr",
         alignment: Alignment.center,
         animation: "rotate_scale_color")
+
     ),
+
+
 
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
